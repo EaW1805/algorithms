@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eaw1805</groupId>
+    <artifactId>algorithms</artifactId>
+    <version>1.0</version>
+
+    <name>Eaw1805 Algorithms</name>
+    <description>EaW1805 is a generic turn-based strategy game engine.
+        Algorithms module includes algorithm implementation for map traversal and fast data access
+        for turn-based strategy game engine and client.</description>
+    <url>https://github.com/EaW1805/algorithms</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Ioannis Chatzigiannakis</name>
+            <email>ichatz@gmail.com</email>
+            <organization>EaW1805</organization>
+            <organizationUrl>https://github.com/EaW1805</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:EaW1805/algorithms.git</connection>
+        <developerConnection>scm:git:git@github.com:EaW1805/algorithms.git</developerConnection>
+        <url>git@github.com:EaW1805/algorithms.git</url>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+
+        <!--#################################################################################################-->
+        <!--EAW1805/DATA-->
+        <dependency>
+            <groupId>com.eaw1805</groupId>
+            <artifactId>data</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!--#################################################################################################-->
+        <!-- JGRAPHT -->
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-core</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
