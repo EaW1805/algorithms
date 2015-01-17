@@ -11,7 +11,8 @@
     <name>Eaw1805 Algorithms</name>
     <description>EaW1805 is a generic turn-based strategy game engine.
         Algorithms module includes algorithm implementation for map traversal and fast data access
-        for turn-based strategy game engine and client.</description>
+        for turn-based strategy game engine and client.
+    </description>
     <url>https://github.com/EaW1805/algorithms</url>
 
     <properties>
@@ -53,6 +54,15 @@
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>eaw1805-mvn-repo</id>
+            <url>https://github.com/EaW1805/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
     </repositories>
