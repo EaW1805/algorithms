@@ -1,6 +1,5 @@
 package com.eaw1805.algorithms;
 
-import com.eaw1805.core.GameEngine;
 import com.eaw1805.data.constants.ArmyConstants;
 import com.eaw1805.data.constants.NationConstants;
 import com.eaw1805.data.constants.ProductionSiteConstants;
@@ -10,6 +9,7 @@ import com.eaw1805.data.constants.TerrainConstants;
 import com.eaw1805.data.dto.common.SectorDTO;
 import com.eaw1805.data.dto.web.movement.PathDTO;
 import com.eaw1805.data.dto.web.movement.PathSectorDTO;
+import com.eaw1805.data.model.Engine;
 import com.eaw1805.data.model.Game;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -370,7 +370,7 @@ public class MovementShortestPath
         // Compute single-source shortest paths
         final BellmanFordShortestPath<SectorDTO, SimpleWeightedEdge> dsp = new BellmanFordShortestPath<SectorDTO, SimpleWeightedEdge>(sectorsGraph, sectors[actualBaseX][actualBaseY], maxLength);
 
-        final ExecutorService executorService = Executors.newFixedThreadPool(GameEngine.MAX_THREADS);
+        final ExecutorService executorService = Executors.newFixedThreadPool(Engine.MAX_THREADS);
         final List<Future<PathDTO>> futures = new ArrayList<Future<PathDTO>>();
 
         // Add all shortest paths

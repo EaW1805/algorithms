@@ -400,7 +400,7 @@ public class SupplyLinesConnectivity
         reexamineNotSupplied();
 
         // Report not supplied barracks
-        if (gameEngine instanceof GameEngine) {
+        if (gameEngine.getName().equals("GameEngine")) {
             reportNotSupplied();
         }
     }
