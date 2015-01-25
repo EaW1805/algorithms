@@ -44,6 +44,11 @@
         <url>git@github.com:EaW1805/algorithms.git</url>
     </scm>
 
+    <issueManagement>
+        <url>https://github.com/EaW1805/algorithms/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
     <distributionManagement>
         <repository>
             <id>internal.repo</id>
@@ -53,6 +58,15 @@
     </distributionManagement>
 
     <repositories>
+        <repository>
+            <id>EaW1805-data-mvn-repo</id>
+            <url>https://raw.github.com/EaW1805/data/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+
         <repository>
             <id>jboss-public-repository-group</id>
             <name>JBoss Public Maven Repository Group</name>
