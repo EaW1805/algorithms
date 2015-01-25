@@ -29,7 +29,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Used to determing the sectors that are visible for the particular nation based on the fog of war rules.
+ * Used to determine the sectors that are visible for the particular nation based on the fog of war rules.
  */
 public class FogOfWarInspector
         implements RegionConstants, TerrainConstants, RelationConstants {
