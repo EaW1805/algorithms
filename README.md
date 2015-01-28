@@ -10,21 +10,23 @@ Algorithm implementation for map traversal and fast data access for turn-based s
 3. A working internet connection
 4. The latest stable release of EaW1805/data artifact
 
+## Execution
+
+This module is not intended to run as a stand-alone mode. It is a core module to be used for all other modules of the repository (EaW1805).
+
+Some test cases are included to test the operation of the algorithms.
+
 ## Configuration
 
 No particular configuration is necessary apart from the username/password for accessing the mysql database.
 These are provided as environmental properties (dbusername and dbpassword), that are passed using the -D<property>=<value>.
 For example:
 
-mvn3 -Ddbusername=example -Ddbpassword=mypassword package
+```
+mvn3 -Ddbusername=example -Ddbpassword=mypassword test
+```
 
 If you are unsure about the settings please contact ichatz@gmail.com
-
-## Execution
-
-This module is not intended to run as a stand-alone mode. It is a core module to be used for all other modules of the repository (EaW1805).
-
-Some test cases are included to test the operation of the algorithms.
 
 ## Maven Repository
 
