@@ -309,7 +309,7 @@ public class SupplyLinesConnectivity
         rollTarget += 3 * orderDetails.getUnspentMP();
 
         // Throw roll
-        final int roll = gameEngine.getRandomGen().nextInt(100) + 1;
+        final int roll = gameEngine.getRandomGen().nextInt(101) + 1;
         return (roll < rollTarget);
     }
 
