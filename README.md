@@ -5,7 +5,7 @@ Algorithm implementation for map traversal and fast data access for turn-based s
 
 ## Requirements
 
-1. Oracle Java 1.7 or newer
+1. Oracle Java 1.8 or newer
 2. Maven 3
 3. A working internet connection
 4. The latest stable release of EaW1805/data artifact
